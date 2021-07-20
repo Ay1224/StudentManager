@@ -1,6 +1,12 @@
-package studentManager;
+package model;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
+
+import studentManager.AlternateStudent;
+import studentManager.Intern;
+import studentManager.Learner;
+import studentManager.Promotion;
 public class Main {
 
 	public static void main(String[] args) {
@@ -17,9 +23,12 @@ public class Main {
 		l2.add(a1);
 		l2.add(a2);
 	
-		Promotion p1 = new Promotion("Developpeur Java", 80,30,l1,LocalDate.now());
+		Promotion p1 = new Promotion("Java4", 80,30,l1,LocalDate.now());
+		Promotion p2 = new Promotion("CDA3", 75,30,l2,LocalDate.now());
 		System.out.println(p1.toString());
-
+		
+		AppWindow appwindow = new AppWindow(new ArrayList<Promotion>(Arrays.asList(p1,p2)));
+		appwindow.setVisible(true);
 	}
 
 }

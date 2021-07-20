@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Intern extends Learner {
 	private String allowanceType;
 	private double allowance;
-	Intern(String firstName, String lastName, LocalDate inscriptionDate, String tel, String mail, String company, String allowanceType, double allowance) {
+	public Intern(String firstName, String lastName, LocalDate inscriptionDate, String tel, String mail, String company, String allowanceType, double allowance) {
 		super(firstName, lastName, inscriptionDate, tel, mail, company);
 		this.allowanceType = allowanceType;
 		this.allowance = allowance;
@@ -36,7 +36,7 @@ public class Intern extends Learner {
 		this.allowance = allocation;
 	}
 
-	public String toString() {
-		return super.toString()+"\nIl a une allocation du type "+allowanceType+" et de montant "+allowance;
-	}
+//	public String toString() {
+//		return super.toString()+"\nIl a une allocation du type "+allowanceType+" et de montant "+allowance;
+//	}
 }

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class AlternateStudent extends Learner {
 	private double salary;
-	AlternateStudent(String firstName, String lastName, LocalDate inscriptionDate, String tel, String mail,
+	public AlternateStudent(String firstName, String lastName, LocalDate inscriptionDate, String tel, String mail,
 			String company, double salary) {
 		super(firstName, lastName, inscriptionDate, tel, mail, company);
 		this.salary = salary;
@@ -16,8 +16,8 @@ public class AlternateStudent extends Learner {
 		this.salary = salary;
 	}
 	
-	public String toString() {
-		return super.toString()+"\nIl a un salaire de "+salary;
-	}
+//	public String toString() {
+//		return super.toString()+"\nIl a un salaire de "+salary;
+//	}
 
 }

@@ -47,6 +47,9 @@ public abstract class Learner {
 //		return"\n\nLe nom de l'apprenant est "+firstName+" "+lastName+"\nSa date d'inscription est "+inscriptionDate +"\nSon numéro de téléphone est "+tel+"\nSon adresse mail est "+mail+"\nSon entreprise est "+company+ "\nLes jours d'absence sont "+absence.size()+" "+verifAbsences()+"\nLa durée du retard est "+retard+" "+verifRetard();
 //	}
 //	
+	public String toString() {
+		return firstName+" "+lastName;
+	}
 	public String getFirstName() {
 		return firstName;
 	}

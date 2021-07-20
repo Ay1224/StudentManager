@@ -9,7 +9,7 @@ public class Promotion {
 	protected int pastDuration;
 	protected LocalDate startingDate;
 	protected ArrayList<Learner> listLearner; 
-	Promotion(String name, int totalDuration, int pastDuration, ArrayList<Learner>listLearner, LocalDate startingDate){
+	public Promotion(String name, int totalDuration, int pastDuration, ArrayList<Learner>listLearner, LocalDate startingDate){
 		this.name = name;
 		this.totalDuration = totalDuration;
 		this.startingDate = startingDate;
@@ -72,7 +72,10 @@ public class Promotion {
 	public void setListLearner(ArrayList<Learner> listLearner) {
 		this.listLearner = listLearner;
 	}
+//	public String toString() {
+//		return"C'est la formation "+name+"\nLa durée totale de la formation est "+totalDuration+"\nLa durée passée de la formation est "+ pastDuration+"\nLa liste des apprenants est :"+listLearner.toString();
+//	}
 	public String toString() {
-		return"C'est la formation "+name+"\nLa durée totale de la formation est "+totalDuration+"\nLa durée passée de la formation est "+ pastDuration+"\nLa liste des apprenants est :"+listLearner.toString();
+		return"Promo "+name;
 	}
 }
